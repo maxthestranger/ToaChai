@@ -1,0 +1,21 @@
+.table_container {
+  min-width: 700px;
+  background-color: #fff;
+}
+
+.table_row,
+.table_heading {
+  display: grid;
+  grid-template-columns: 320px 160px 160px 160px 160px;
+  grid-column-gap: 10px;
+  padding-left: 20px;
+}
+.table_row {
+  border-bottom: 1px solid #ddd;
+}
+.table_heading {
+  background-color: #cdcdcd;
+}
+.heading_text {
+  max-width: 100%;
+}

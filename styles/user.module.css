@@ -1,6 +1,0 @@
-.grid_of_2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 20px;
-  grid-row-gap: 15px;
-}

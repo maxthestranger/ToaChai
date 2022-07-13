@@ -1,0 +1,24 @@
+{
+  "name": "toachai",
+  "version": "1.0.0",
+  "description": "A platform where content creators in Kenya and/or Africa as a whole can receive support in form of funds",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxthestranger/ToaChai.git"
+  },
+  "keywords": [
+    "toachai",
+    "content",
+    "creators"
+  ],
+  "author": "Max The Stranger",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maxthestranger/ToaChai/issues"
+  },
+  "homepage": "https://github.com/maxthestranger/ToaChai#readme"
+}

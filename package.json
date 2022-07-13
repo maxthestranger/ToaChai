@@ -2,9 +2,9 @@
   "name": "toachai",
   "version": "1.0.0",
   "description": "A platform where content creators in Kenya and/or Africa as a whole can receive support in form of funds",
-  "main": "app.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "nodemon ./src/app.js"
   },
   "repository": {
     "type": "git",
@@ -30,9 +30,14 @@
   "dependencies": {
     "compression": "^1.7.4",
     "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
     "express": "^4.18.1",
+    "express-validation": "^4.1.0",
     "helmet": "^5.1.0",
+    "http-status": "^1.5.2",
     "method-override": "^3.0.0",
-    "morgan": "^1.10.0"
+    "mongoose": "^6.4.4",
+    "morgan": "^1.10.0",
+    "winston": "^3.8.1"
   }
 }

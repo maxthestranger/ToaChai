@@ -35,6 +35,7 @@ const userSchema = new mongoose.Schema(
       trim: true,
     },
     username: {
+      type: String,
       unique: true,
       trim: true,
       lowercase: true,
@@ -63,7 +64,7 @@ const userSchema = new mongoose.Schema(
   },
   {
     timestamps: true,
-  },
+  }
 );
 
 /**
@@ -182,9 +183,7 @@ userSchema.statics = {
   /**
    * List users in descending order of 'createdAt' timestamp.
    */
-  list({
-    page = 1, perPage = 30, name, email, role,
-  }) {
+  list({ page = 1, perPage = 30, name, email, role }) {
     const options = omitBy({ name, email, role }, isNil);
 
     return this.find(options)
@@ -217,9 +216,7 @@ userSchema.statics = {
     return error;
   },
 
-  async oAuthLogin({
-    service, id, email, name, picture,
-  }) {
+  async oAuthLogin({ service, id, email, name, picture }) {
     const user = await this.findOne({
       $or: [{ [`services.${service}`]: id }, { email }],
     });
